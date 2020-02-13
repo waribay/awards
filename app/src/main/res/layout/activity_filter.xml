@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Poin Needed"
+            android:textColor="@color/cardview_dark_background"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textSize="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IDR 10,000"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:textColor="@color/design_default_color_primary_dark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IDR 500,000"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:id="@+id/txt_end_limit"
+                android:textColor="@color/design_default_color_primary_dark"/>
+        </LinearLayout>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tooltipText="Poin Needed"
+            android:min="10000"
+            android:max="1000000"
+            android:progress="10000"
+            android:id="@+id/seek_poin"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Awards Type"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="15dp"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Type"
+        android:checked="true"
+        android:id="@+id/check_all"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vouchers"
+        android:checked="true"
+        android:id="@+id/check_voucher"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Products"
+        android:checked="true"
+        android:id="@+id/check_product"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gifts"
+        android:checked="true"
+        android:id="@+id/check_gift"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply Filter"
+        android:layout_margin="10dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:textColor="@color/cardview_light_background"
+        android:onClick="btnApplyFilter"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Filter"
+        android:layout_margin="10dp"
+        android:background="@color/cardview_light_background"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:onClick="btnResetFilter"/>
+
+</LinearLayout>

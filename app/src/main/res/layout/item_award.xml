@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/image_awards"
+        android:background="@drawable/background_1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Award Type"
+            android:textColor="@color/cardview_light_background"
+            android:background="@color/design_default_color_primary"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:id="@+id/type_awards"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100.000 Poin"
+            android:textColor="@color/cardview_light_background"
+            android:background="@color/cardview_dark_background"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:id="@+id/poin_awards"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gift Card 500.000"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/cardview_dark_background"
+        android:textStyle="bold"
+        android:id="@+id/gift_awards"
+        android:textSize="17dp"/>
+
+</LinearLayout>
